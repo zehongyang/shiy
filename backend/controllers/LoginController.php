@@ -40,7 +40,7 @@ class LoginController extends Controller
                 'role_name'=>$user->role->role_name
             ];
             $user->last_login_time = time();
-            $user->last_login_ip = ip2long(\Yii::$app->request->userIP);
+            $user->last_login_ip = \Yii::$app->request->userIP;
             $user->save(false);
             return $this->redirect(['index/index']);
         }

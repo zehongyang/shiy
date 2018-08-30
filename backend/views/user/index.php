@@ -57,7 +57,7 @@
                             <td><?= $user->nickname;?></td>
                             <td><?= $user->role->role_name;?></td>
                             <td><?= date('Y-m-d H:i:s',$user->last_login_time);?></td>
-                            <td><?= long2ip($user->last_login_ip);?></td>
+                            <td><?= $user->last_login_ip;?></td>
                             <td><?= date('Y-m-d H:i:s',$user->created_time);?></td>
                             <td>
                                 <a href="<?= \yii\helpers\Url::to(['user/edit','id'=>$user->id])?>" class="btn btn-outline btn-primary btn-sm">编辑</a>

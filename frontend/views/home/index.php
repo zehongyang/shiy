@@ -30,7 +30,7 @@
                 <?php foreach ($data as $k=>$v):?>
                 <li class="index_arc_item">
                     <a href="#" class="pic">
-                        <img class="lazyload" data-original="http://www.advanced.com/<?= !empty($v->file->file_path)? $v->file->file_path : 'temp/art.jpg';?>" alt="应该选" />
+                        <img class="lazyload" data-original="http://www.51shiyao.com/<?= !empty($v->file->file_path)? $v->file->file_path : 'temp/art.jpg';?>" alt="应该选" />
                     </a>
                     <h4 class="title"><a href="<?= \yii\helpers\Url::to(['article/detail','id'=>$v->id]);?>"><?= $v->title;?></a></h4>
                     <div class="date_hits">

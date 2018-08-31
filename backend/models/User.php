@@ -53,7 +53,7 @@ class User extends ActiveRecord
     {
         $dir = 'uploads/'.date('Y-m-d').'/';
         if(!is_dir($dir)){
-            mkdir($dir,0777,true);
+            mkdir($dir,0755,true);
         }
         $path = $dir.uniqid().'.'.$this->imageCover->extension;
         $this->imageCover->saveAS($path,false);

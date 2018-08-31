@@ -17,12 +17,12 @@ class MemberController extends Controller
 {
 
     //应用id
-    private $_appid = '101500238';
+    private $_appid = '101500156';
     //回调地址
     private $_back_url = 'http://www.51shiyao.com/index.php?r=member/login-back';
     private $_state = '51shiyao';
     //密钥
-    private $_app_key = '87d006cc33a1de8feac6997626e48055';
+    private $_app_key = '60452cce8c5e54c3b914caf2254d9377';
     private $_access_token;
 
 
